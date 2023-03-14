@@ -1,6 +1,17 @@
 def main():
-    zip_to_states = {0: ["CT", "MA", "ME", "NH", "NJ", "RI", "VT"], 1: ["DE", "NY", "PA"], 2: ["MD", "NC", "SC", "VA", "WV"], 3: ["AL", "FL", "GA", "MS", "TN"], 4: ["IN", "KY", "MI", "OH"], 5: [
-        "IA", "MN", "MT", "ND", "SD", "WI"], 6: ["IL", "KS", "MO", "NE"], 7: ["AR", "LA", "OK", "TX"], 8: ["AZ", "CO", "ID", "NM", "NV", "UT", "WY"], 9: ["AK", "CA", "HI", "OR", "WA"]}
+    states0 = ["CT", "MA", "ME", "NH", "NJ", "RI", "VT"]
+    states1 = ["DE", "NY", "PA"]
+    states2 = ["MD", "NC", "SC", "VA", "WV"]
+    states3 = ["AL", "FL", "GA", "MS", "TN"]
+    states4 = ["IN", "KY", "MI", "OH"]
+    states5 = ["IA", "MN", "MT", "ND", "SD", "WI"]
+    states6 = ["IL", "KS", "MO", "NE"]
+    states7 = ["AR", "LA", "OK", "TX"]
+    states8 = ["AZ", "CO", "ID", "NM", "NV", "UT", "WY"]
+    states9 = ["AK", "CA", "HI", "OR", "WA"]
+    zip_to_states = {0: states0, 1: states1, 2: states2, 3: states3,
+                     4: states4, 5: states5, 6: states6, 7: states7,
+                     8: states8, 9: states9}
 
     user_input = input("Please enter a zipcode.\n")
     zip_digit = user_input[0]
