@@ -16,26 +16,29 @@ def main():
     user_input = input("Please enter a zipcode.\n")
     zip_digit = user_input[0]
     list = []
-    if zip_digit == "0":
-        borders = (0, 1)
-    if zip_digit == "1":
-        borders = (1, 2, 4)
-    if zip_digit == "2":
-        borders = (1, 2, 3, 4)
-    if zip_digit == "3":
-        borders = (2, 3, 4, 6, 7)
-    if zip_digit == "4":
-        borders = (1, 2, 3, 4, 5, 6)
-    if zip_digit == "5":
-        borders = (4, 5, 6, 8)
-    if zip_digit == "6":
-        borders = (3, 4, 5, 6, 7, 8)
-    if zip_digit == "7":
-        borders = (3, 6, 7, 8)
-    if zip_digit == "8":
-        borders = (5, 6, 7, 8, 9)
-    if zip_digit == "9":
-        borders = (8, 9)
+    match zip_digit:
+        case "0":
+            borders = (0, 1)
+        case "1":
+            borders = (1, 2, 4)
+        case "2":
+            borders = (1, 2, 3, 4)
+        case "3":
+            borders = (2, 3, 4, 6, 7)
+        case "4":
+            borders = (1, 2, 3, 4, 5, 6)
+        case "5":
+            borders = (4, 5, 6, 8)
+        case "6":
+            borders = (3, 4, 5, 6, 7, 8)
+        case "7":
+            borders = (3, 6, 7, 8)
+        case "8":
+            borders = (5, 6, 7, 8, 9)
+        case "9":
+            borders = (8, 9)
+        case _:
+            raise Exception("Not a zipcode")
     for border in borders:
         list.extend(zip_to_states[border])
     print(list, len(list))
