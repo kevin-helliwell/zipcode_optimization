@@ -6,7 +6,7 @@ This is intended as logical scaffolding to optimize what listings to show in the
 
 # Logic
 
-If we know based on the zipcode where the user *cannot be*, that means you can render fewer listings.
+If we know based on the zipcode where the user *cannot be*, that means we can render fewer listings.
 
 ![image](https://user-images.githubusercontent.com/39539208/226200787-db5ec6bf-3b0e-40db-b1ec-0d030e8794e1.png)
 
