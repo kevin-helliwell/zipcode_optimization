@@ -6,7 +6,15 @@ This is intended as logical scaffolding to optimize what listings to show in the
 
 # Logic
 
-If we know based on the zipcode where the user *cannot be*, that means we can render fewer listings.
+If we know based on the zipcode where the user *cannot be*, that means we can render fewer total listings. 
+
+At the same time, the listings we do render are closer to where the user might be. 
+
+Compared to rendering all listings for the entire United States, this approach is way more efficient.
+
+The absolute worst case scenario would involve rendering 30 states' worth of listings. That's still 20 states' worth of listings that don't have to be rendered.
+
+And all of this is just based on the first digit of the zipcode. That's it.
 
 ![image](https://user-images.githubusercontent.com/39539208/226200787-db5ec6bf-3b0e-40db-b1ec-0d030e8794e1.png)
 
